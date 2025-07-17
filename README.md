@@ -1,1 +1,77 @@
-# fMRI-denoise
+# fMRI Image Denoising Training Pipeline (w FFT Loss)
+
+This project provides a training pipeline for medical image data in NIfTI format (`.nii.gz`). The pipeline is designed for flexibility and easy experimentation using Jupyter Notebooks.
+
+## 📁 Folder Structure
+
+```
+project-root/
+│
+├── train_model_visual.py     # Main training notebook
+├── data/                 # Folder for training data
+│   ├── case1.nii.gz
+│   ├── case2.nii.gz
+│   └── ...
+├── validation/           # Folder for validation data
+│   ├── val1.nii.gz
+│   ├── val2.nii.gz
+│   └── ...
+```
+
+## 🚀 Getting Started
+
+### 🛠 Requirements
+
+Make sure to install all dependencies, including:
+
+- Python 3.8+
+- NumPy
+- PyTorch
+- Nibabel
+- Matplotlib
+- scikit-learn
+- Jupyter
+
+### 🧪 Creating a Conda Environment
+
+To create a Conda environment with all required dependencies:
+
+1. Ensure you have Miniconda or Anaconda installed.
+2. Run the following command from the project directory:
+
+```bash
+conda env create -f environment.yml
+```
+
+3. Activate the environment:
+
+```bash
+conda activate fmri
+```
+
+### 📋 Setup Instructions
+
+1. **Prepare Your Data**
+   - Place your training `.nii.gz` files in the `data/` folder.
+   - Place your validation `.nii.gz` files in the `validation/` folder.
+
+2. **Customize Parameters**
+   You can customize various training parameters inside the notebook:
+   - **Learning Rate**
+   - **Optimizer**
+   - **Batch Size**
+   - **Number of Epochs**
+   
+   Modify these settings in the notebook to experiment with different training configurations.
+
+3. **Train the Model**
+   Run the `final_train.ipynb` notebook to:
+   - Load and preprocess the data
+   - Set up the model and training parameters
+   - Train the model
+   - Evaluate the results on the validation set
+
+## 📈 Output
+
+- The notebook will display training loss and validation metrics.
+- You can modify it to save models, logs, or predictions as needed.
