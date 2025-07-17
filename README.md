@@ -65,7 +65,7 @@ conda activate fmri
    Modify these settings in the notebook to experiment with different training configurations.
 
 3. **Train the Model**
-   Run the `final_train.ipynb` notebook to:
+   Run the `train_model_visual.py` notebook to:
    - Load and preprocess the data
    - Set up the model and training parameters
    - Train the model
@@ -73,5 +73,8 @@ conda activate fmri
 
 ## 📈 Output
 
-- The notebook will display training loss and validation metrics.
-- You can modify it to save models, logs, or predictions as needed.
+- All training updates (loss, metrics, etc.) will also be available in **TensorBoard** for interactive visualization.
+- You can modify the `train_model_visual.py` to save:
+  - Trained models
+  - Prediction outputs
+  - Log files
