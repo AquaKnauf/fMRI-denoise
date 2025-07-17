@@ -1,5 +1,7 @@
 # fMRI Image Denoising Training Pipeline (w FFT Loss)
 
+![Fmri Denoise Example](images/mri_image.png)
+
 This project provides a training pipeline for medical image data in NIfTI format (`.nii.gz`). The pipeline is designed for flexibility and easy experimentation using Jupyter Notebooks.
 
 ## 📁 Folder Structure
