@@ -92,7 +92,7 @@ conda activate fmri
 
 ## 🧪 Evaluation Results
 
-After training, the model achieved the following performance on the validation set:
+After training, the model for 6 Epochs achieved the following performance on the validation set:
 
 - **MSE**  : `0.000090`  
 - **PSNR** : `40.51 dB`  
