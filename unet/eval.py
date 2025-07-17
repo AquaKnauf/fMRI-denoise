@@ -8,8 +8,8 @@ from skimage.metrics import structural_similarity as ssim
 from tqdm import tqdm
 
 
-from unet.dataset import FMRI3DDataset
-from unet.model import UNet3DfMRI
+from dataset import FMRI3DDataset
+from model import UNet3DfMRI
 
 
 def evaluate_model(model, dataloader, device):
