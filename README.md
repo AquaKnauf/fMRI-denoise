@@ -67,7 +67,14 @@ conda activate fmri
    Modify these settings in the notebook to experiment with different training configurations.
 
 3. **Train the Model**
-   Run the `train_model_visual.py` notebook to:
+   Run the `train_model_visual.py` file to:
+   - Load and preprocess the data
+   - Set up the model and training parameters
+   - Train the model
+   - Evaluate the results on the validation set
+
+4. **Train the Model [optional]**
+   Run the `fmri.ipyb` Notebook to:
    - Load and preprocess the data
    - Set up the model and training parameters
    - Train the model
