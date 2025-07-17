@@ -87,3 +87,13 @@ conda activate fmri
   - Trained models
   - Prediction outputs
   - Log files
+
+ ---
+
+## 🧪 Evaluation Results
+
+After training, the model achieved the following performance on the validation set:
+
+- **MSE**  : `0.000090`  
+- **PSNR** : `40.51 dB`  
+- **SSIM** : `0.9923`
