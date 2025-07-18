@@ -9,7 +9,16 @@ This project provides a training pipeline for medical image data in NIfTI format
 ```
 project-root/
 │
-├── train_model_visual.py     # Main training notebook
+├── unet
+│   ├── dataset.py
+│   ├── eval.py
+│   ├── model.py
+│   ├── util.py
+├── fmri.ipynb
+├── train_model.py
+├── train_model_visual.py
+├── environment.yaml
+├── README.md
 ├── data/                 # Folder for training data
 │   ├── case1.nii.gz
 │   ├── case2.nii.gz
