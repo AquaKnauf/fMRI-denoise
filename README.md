@@ -79,6 +79,30 @@ conda activate fmri
    - Set up the model and training parameters
    - Train the model
    - Evaluate the results on the validation set
+  
+5. **CHECKPOINT**
+   Checkpoint can be downloaded from `https://huggingface.co/AquaKnauf/fmri-denoise/tree/main`
+
+   or can be used using
+
+   You can easily download the trained model weights directly from the Hugging Face Hub using the `huggingface_hub` Python library:
+
+To download the pre-trained model from Hugging Face Hub:
+
+```python
+from huggingface_hub import hf_hub_download
+
+model_path = hf_hub_download(
+    repo_id="AquaKnauf/fmri-denoise",
+    filename="model.pt"
+)
+```
+
+Make sure you have huggingface_hub installed:
+
+```bash
+pip install huggingface_hub
+```
 
 ## 📈 Output
 
