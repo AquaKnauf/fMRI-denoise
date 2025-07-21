@@ -95,7 +95,7 @@ conda activate fmri
    
    model_path = hf_hub_download(
        repo_id="AquaKnauf/fmri-denoise",
-       filename="model.pt"
+       filename="model_weights_epoch6.pth"
    )
    ```
    
