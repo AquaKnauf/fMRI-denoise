@@ -131,3 +131,30 @@ After training, the model for 6 Epochs achieved the following performance on the
 - **MSE**  : `0.000090`  
 - **PSNR** : `40.51 dB`  
 - **SSIM** : `0.9923`
+
+## ✅ How to Use (via Web UI)
+Go to the Hugging Face Space, upload a .nii.gz fMRI file (4D shape: X × Y × Z × T), and click Submit. The model will return a denoised .nii.gz file.
+
+## 🔁 API Access (Programmatic)
+You can also call the API programmatically using the Gradio Client:
+
+```python
+Copy
+Edit
+from gradio_client import Client
+
+client = Client("AquaKnauf/fMRI-Denoise-Api")
+result = client.predict(
+    "sub-01_task-rest_bold.nii.gz",  # path to your 4D fMRI file
+    api_name="/predict"
+)
+
+# Save the denoised output
+with open("denoised_output.nii.gz", "wb") as f:
+    f.write(result)```
+
+## 📦 Input
+.nii.gz file (4D fMRI, shape: X × Y × Z × T)
+
+## 📤 Output
+.nii.gz file with the same shape, denoised
