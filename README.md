@@ -138,20 +138,18 @@ Go to the Hugging Face Space, upload a .nii.gz fMRI file (4D shape: X × Y × Z 
 ## 🔁 API Access (Programmatic)
 You can also call the API programmatically using the Gradio Client:
 
-```python
-Copy
-Edit
-from gradio_client import Client
-
-client = Client("AquaKnauf/fMRI-Denoise-Api")
-result = client.predict(
-    "sub-01_task-rest_bold.nii.gz",  # path to your 4D fMRI file
-    api_name="/predict"
-)
-
-# Save the denoised output
-with open("denoised_output.nii.gz", "wb") as f:
-    f.write(result)```
+   ```python
+   from gradio_client import Client
+   
+   client = Client("AquaKnauf/fMRI-Denoise-Api")
+   result = client.predict(
+       "sub-01_task-rest_bold.nii.gz",  # path to your 4D fMRI file
+       api_name="/predict"
+   )
+   
+   # Save the denoised output
+   with open("denoised_output.nii.gz", "wb") as f:
+       f.write(result)```
 
 ## 📦 Input
 .nii.gz file (4D fMRI, shape: X × Y × Z × T)
