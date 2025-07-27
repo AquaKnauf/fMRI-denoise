@@ -149,9 +149,8 @@ You can also call the API programmatically using the Gradio Client:
    
    # Save the denoised output
    with open("denoised_output.nii.gz", "wb") as f:
-       f.write(result)```
----
-
+       f.write(result)
+```
 
 ### 📦 Input
 .nii.gz file (4D fMRI, shape: X × Y × Z × T)
