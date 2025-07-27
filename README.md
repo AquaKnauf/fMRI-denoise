@@ -132,10 +132,10 @@ After training, the model for 6 Epochs achieved the following performance on the
 - **PSNR** : `40.51 dB`  
 - **SSIM** : `0.9923`
 
-## ✅ How to Use (via Web UI)
+### ✅ How to Use (via Web UI)
 Go to the Hugging Face Space, upload a .nii.gz fMRI file (4D shape: X × Y × Z × T), and click Submit. The model will return a denoised .nii.gz file.
 
-## 🔁 API Access (Programmatic)
+### 🔁 API Access (Programmatic)
 You can also call the API programmatically using the Gradio Client:
 
    ```python
@@ -151,8 +151,8 @@ You can also call the API programmatically using the Gradio Client:
    with open("denoised_output.nii.gz", "wb") as f:
        f.write(result)```
 
-## 📦 Input
+### 📦 Input
 .nii.gz file (4D fMRI, shape: X × Y × Z × T)
 
-## 📤 Output
+### 📤 Output
 .nii.gz file with the same shape, denoised
